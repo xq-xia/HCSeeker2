@@ -1,7 +1,7 @@
 # HCSeeker2
 Deep learning integration of sequence context and prior features for whole-exome variant hot and cold spot prediction
 <div align="center">
-  <img src="figure/fig1.jpg" alt="HCSeeker2 Graph" width=1000px>
+  <img src="figure/fig1_300.jpg" alt="HCSeeker2 Graph" width=1000px>
 </div>
 
 
