@@ -1,7 +1,7 @@
 # HCSeeker2
 Deep learning integration of sequence context and prior features for whole-exome variant hot and cold spot prediction
 <div align="center">
-  <img src="figure/fig1_600.jpg" alt="HCSeeker2 Graph" width=1000px>
+  <img src="figure/fig1.jpg" alt="HCSeeker2 Graph" width=1000px>
 </div>
 
 
@@ -24,13 +24,13 @@ pip install -r requirements.txt
 ```
 or
 ```python
-conda env create -f HCSeer2.yaml
+conda env create -f HCSeeker2.yaml
 ```
 
 ## Model Training
 To train the Translatomer model, use the following command, training data was obtained from Zenodo([https://zenodo.org/uploads/17949354](https://zenodo.org/records/17949354)):
 ```
-python HCSeer2_train_predict.py [options]
+python HCSeeker2_train_predict.py [options]
 
 [options]:
 - --run_type  run type. Default = 'train'.
@@ -41,10 +41,10 @@ python HCSeer2_train_predict.py [options]
 ```
 Example to run the codes:
 ```
-python HCSeer2_train_predict.py --run_type train --sequence_data "\path\Train_input_seq_100bp.txt" --input_feature_data "\path\Train_input_feature_100bp.txt"  --output_feature_data "\path\Train_output_hot_cold_score_100bp.txt" 
+python HCSeeker2_train_predict.py --run_type train --sequence_data "\path\Train_input_seq_100bp.txt" --input_feature_data "\path\Train_input_feature_100bp.txt"  --output_feature_data "\path\Train_output_hot_cold_score_100bp.txt" 
 ```
 
 ```
-python HCSeer2_train_predict.py --run_type predict --sequence_data "\data\predict_data_chrY_seq.txt" --input_feature_data "\data\predict_data_chrY_feature.txt" --checkpoint "\path\to\your\Model.ckpt" --predict_result_path "\path\predict_result\predict_result_chrY.txt" 
+python HCSeeker2_train_predict.py --run_type predict --sequence_data "\data\predict_data_chrY_seq.txt" --input_feature_data "\data\predict_data_chrY_feature.txt" --checkpoint "\path\to\your\Model.ckpt" --predict_result_path "\path\predict_result\predict_result_chrY.txt" 
 ```
 
