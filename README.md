@@ -1,7 +1,7 @@
-# HCSeer2
-A Deep Learning-Based Multi-Scale Modeling Framework for Predicting Cold and Hot Spots of Variants in the Human Exome
+# HCSeeker2
+Deep learning integration of sequence context and prior features for whole-exome variant hot and cold spot prediction
 <div align="center">
-  <img src="figure/fig1.jpg" alt="HCSeer Graph" width=1000px>
+  <img src="figure/fig1_600.jpg" alt="HCSeeker2 Graph" width=1000px>
 </div>
 
 
